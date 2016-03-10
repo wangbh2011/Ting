@@ -33,12 +33,23 @@ class Factory {
 
 public class InterfaceFactory {
 	public static void main(String args[]) {
-		Fruit fruit = Factory.getInstance(args[0]);
+		Fruit fruit;
+		
+		// 我要吃苹果
+		fruit = Factory.getInstance("apple");
+		eateFruit(fruit);
+		// 我要吃橘子
+		fruit = Factory.getInstance("orange");
+		eateFruit(fruit);
+
+	}
+	
+	private static void eateFruit(Fruit fruit){
 		if (fruit != null) {
+			//我要吃苹果
 			fruit.eat();
-
 		}
-
+		
 	}
 
 }
