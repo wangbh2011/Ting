@@ -27,9 +27,7 @@ class Factory {
 			fruit = new Orange();
 
 		}
-
 		return fruit;
-
 	}
 }
 
