@@ -46,8 +46,9 @@ public class InterfaceFactory {
 	
 	private static void eateFruit(Fruit fruit){
 		if (fruit != null) {
-			//我要吃苹果
+			System.out.println("我想要吃------>");
 			fruit.eat();
+			System.out.println("");
 		}
 		
 	}
